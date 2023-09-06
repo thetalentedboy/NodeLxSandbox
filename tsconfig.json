@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "@vendor/*": ["./vendor/*"]
+    },
+    "target": "es2021",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
+    "strict": true,
+    "outDir": "out",
+    "sourceMap": false,
+    "types": ["reflect-metadata", "node"]
+  },
+  "include": [
+    "./**/*.ts"
+  ]
+}

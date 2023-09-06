@@ -1,0 +1,35 @@
+{
+  "name": "NodeLxSandbox",
+  "version": "1.0.0",
+  "description": "This interactive sandbox allows you to simulate Linux command-line operations right from your terminal. Practice and experiment with a variety of Linux commands while enjoying the flexibility and security of a Node.js-powered environment. Dive into the world of Linux and Node.js with NodeSandboxLinux!",
+  "module": "esm",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/thetalentedboy/NodeLxSandbox.git"
+  },
+  "keywords": [
+    "nodejs",
+    "linux"
+  ],
+  "author": "w17664062061@gamil.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thetalentedboy/NodeLxSandbox/issues"
+  },
+  "homepage": "https://github.com/thetalentedboy/NodeLxSandbox#readme",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "inversify": "^6.0.1",
+    "nodemon": "^3.0.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.9"
+  }
+}
