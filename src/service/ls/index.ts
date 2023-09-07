@@ -1,8 +1,8 @@
 import { injectable } from "inversify";
-import { lsInterface } from "../../interfaces/ls";
+import { LsInterface } from "../interfaces";
 
 @injectable()
-export class ls implements lsInterface {
+export class LsCommandService implements LsInterface {
 	execute() {
 		console.log('ls')		
 	}
