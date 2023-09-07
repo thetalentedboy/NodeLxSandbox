@@ -3,4 +3,4 @@ const IDENTIFIER = {
     TOUCH: Symbol.for("touch"),
 };
 
-export default IDENTIFIER;
+export default IDENTIFIER

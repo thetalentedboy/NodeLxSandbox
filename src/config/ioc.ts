@@ -7,11 +7,10 @@ import {
 import {
  ls,
  touch 
-} from "../commands";
-
+} from "../service";
 import IDENTIFIER from "../constants/identifiers";
 
-let container = new Container();
+const container = new Container();
 
 container.bind<lsInterface>(IDENTIFIER.LS).to(ls)
 container.bind<touchInterface>(IDENTIFIER.TOUCH).to(touch)

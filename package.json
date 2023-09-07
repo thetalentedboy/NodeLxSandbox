@@ -5,7 +5,7 @@
   "module": "esm",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.ts"
+    "dev": "nodemon ./src/index.ts"
   },
   "repository": {
     "type": "git",

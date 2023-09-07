@@ -1,1 +1,3 @@
-export interface touchInterface {}
+export interface touchInterface {
+	execute(): void
+}
