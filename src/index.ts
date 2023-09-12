@@ -1,9 +1,6 @@
 import container from "./config/ioc";
-import IDENTIFIER from "./constants/identifiers";
-import { touchInterface } from "./service/interfaces";
+import { IDENTIFIER } from "./constants/identifiers";
+import { BootstrapInterface } from "./types";
 
-
-const service = container.get<touchInterface>(IDENTIFIER.TOUCH)
-
-
-service.execute()
+const bootstrap = container.get<BootstrapInterface>(IDENTIFIER.BOOTSTRAP);
+bootstrap.start();

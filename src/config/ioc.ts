@@ -1,26 +1,22 @@
 import "reflect-metadata";
 import { Container } from "inversify";
-import IDENTIFIER from "../constants/identifiers";
+import { IDENTIFIER, COMMANDIDENTIFIER } from "../constants/identifiers";
 import {
-  bootstrapInterface,
-  commandExecutorInterface,
-  LsInterface,
-  TouchInterface,
-} from "../service/interfaces";
+  BootstrapInterface,
+  CommandExecutorInterface,
+  CommandServiceInterface
+} from "../types";
 import {
   Bootstrap,
   commandExecutor,
- LsCommandService,
- TouchCommandService,
+  commandService
 } from "../service";
-
-
 
 const container = new Container();
 
-container.bind<bootstrapInterface>(IDENTIFIER.BOOTSTRAP).to(Bootstrap)
-container.bind<commandExecutorInterface>(IDENTIFIER.COMMANDEXECUTOR).to(commandExecutor)
-container.bind<LsInterface>(IDENTIFIER.LS).to(LsCommandService)
-container.bind<TouchInterface>(IDENTIFIER.TOUCH).to(TouchCommandService)
+container.bind<BootstrapInterface>(IDENTIFIER.BOOTSTRAP).to(Bootstrap)
+container.bind<CommandExecutorInterface>(IDENTIFIER.COMMANDEXECUTOR).to(commandExecutor)
+container.bind<CommandServiceInterface.LsInterface>(COMMANDIDENTIFIER.LS).to(commandService.LsCommandService)
+container.bind<CommandServiceInterface.TouchInterface>(COMMANDIDENTIFIER.TOUCH).to(commandService.TouchCommandService)
 
 export default container;
