@@ -8,6 +8,5 @@ export class TouchCommandService implements TouchInterface {
 
   execute() {
     console.log("touch");
-    this.ls.execute();
   }
 }

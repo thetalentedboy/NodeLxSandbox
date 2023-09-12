@@ -25,8 +25,13 @@ export class commandExecutor implements CommandExecutorInterface {
   }
 
   execute(commandString: string) {
-    const argv = commandString.split(" ").slice(1);
     const command = commandString.split(" ")[0];
+    if (!(command in this.commandSet)) {
+      console.error(`command not found:${command}`);
+      return;
+    }
+    const argv = commandString.split(" ").slice(1);
     const commandSet = minimist(argv);
+    this.commandSet[command].execute(commandSet);
   }
 }

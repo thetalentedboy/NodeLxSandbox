@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/thetalentedboy/NodeLxSandbox#readme",
   "dependencies": {
-    "commander": "^11.0.0",
     "inversify": "^6.0.1",
     "minimist": "^1.2.8",
     "nodemon": "^3.0.1",

@@ -1,11 +1,11 @@
-export interface TouchInterface {
-	execute(): void
-}
+import { ParsedArgs } from "minimist";
 
+export interface TouchInterface {
+  execute(params: ParsedArgs): void;
+}
 
 export interface LsInterface {
-	execute(): void
+  execute(params: ParsedArgs): void;
 }
 
-
-export type CommandUnionType = TouchInterface | LsInterface
+export type CommandUnionType = TouchInterface | LsInterface;
